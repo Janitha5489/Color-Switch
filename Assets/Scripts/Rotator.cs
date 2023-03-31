@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public class Rotator : MonoBehaviour {
 
 	public bool isrotate;

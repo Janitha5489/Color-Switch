@@ -24,7 +24,7 @@ public void PauseGame() {
             GameIsPaused =false;    
         }
     }
-    public void restartGame(){
+    public void RestartGame(){
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }  

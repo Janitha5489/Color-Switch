@@ -6,14 +6,14 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private Button[] Buttons;
     private int m_UnlockedLevelsNumber;
-  private void Awake() {
+    private void Awake() {
         for (int i = 0; i < Buttons.Length; i++){
             Buttons[i].interactable = false;
         }
     }
-    private void Start(){
-        m_UnlockedLevelsNumber = PlayerPrefs.GetInt("Levels Unlocked", 0);
-        for(int i=0;i <= m_UnlockedLevelsNumber; i++){
+    private void Start() {
+        m_UnlockedLevelsNumber = PlayerPrefs.GetInt("Levels_Unlocked", 0);
+        for (int i = 0; i <= m_UnlockedLevelsNumber; i++) {
             Buttons[i].interactable = true;
         }
     }

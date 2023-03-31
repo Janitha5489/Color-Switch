@@ -1,17 +1,20 @@
 using UnityEngine;
 public class AudioSound : MonoBehaviour{
-    public static AudioClip JumpSound, WinSound, FailSound,bgsound;
+    public static AudioClip JumpSound;
+    public static AudioClip WinSound;
+    public static AudioClip FailSound;
+    public static AudioClip  BgSound;
 
     static AudioSource audiosrc;
-    void Start(){
+    void Start()
+    {
         JumpSound = Resources.Load<AudioClip>("jump");
         WinSound = Resources.Load<AudioClip>("win");
         FailSound = Resources.Load<AudioClip>("dead");
-        bgsound = Resources.Load<AudioClip>("bg");
-
+        BgSound = Resources.Load<AudioClip>("bg");
         audiosrc = GetComponent<AudioSource>();
     }
-    public static void playSound (string clip){
+    public static void PlaySound (string clip){
         switch (clip) { 
             case "jump":
                 audiosrc.PlayOneShot(JumpSound);

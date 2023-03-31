@@ -58,3 +58,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+.github
+.idea
+.sonarqube/
+.scannerwork
+*.DS_Store
+UserSettings/
+mono_crash.*

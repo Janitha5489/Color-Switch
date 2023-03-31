@@ -1,16 +1,15 @@
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 using static UnityEngine.UI.GridLayoutGroup;
 
 public class Jump : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
     bool c;
-
     public float jumpForce = 8f;
     public Rigidbody2D rb;
     public SpriteRenderer sr;
     public GameObject player;
     public float Force;
+    public ParticleSystem Dust;
     bool isPressed = false;
     private void Awake()
     {
@@ -39,7 +38,8 @@ public class Jump : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
     public void OnPointerDown(PointerEventData eventData){
         if (!c) return;
         //isPressed = true;
-        AudioSound.playSound("jump");
+        AudioSound.PlaySound("jump");
+        Dust.Play();
         rb.gravityScale = 2;
         rb.velocity = Vector2.up * jumpForce;
     }
