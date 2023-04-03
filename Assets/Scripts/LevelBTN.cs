@@ -10,4 +10,11 @@ public class LevelBTN : MonoBehaviour
         Time.timeScale = 1f;
 
     }
+    public void DeleteAllDAta()
+    {
+        PlayerPrefs.DeleteAll();
+        Application.LoadLevel("LevelManager");
+
+
+    }
 }
