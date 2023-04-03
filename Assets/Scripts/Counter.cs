@@ -11,7 +11,7 @@ public class Counter : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D ScoreCount) {
         if (ScoreCount.tag == "ScoreCount") {
-            ScoreNum += 1;
+            ScoreNum += 5;
             Destroy(ScoreCount.gameObject);
             MyscoreText.text = "" + ScoreNum;
         }

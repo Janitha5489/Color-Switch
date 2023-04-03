@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e688e254ed83c4341853af9ac1f7d1ea, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.35267764, g: 0.72508216, b: 0.96046394, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1164,7 +1164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isrotate: 0
-  speed: 100
+  speed: 150
 --- !u!4 &390748172
 Transform:
   m_ObjectHideFlags: 0
@@ -1785,7 +1785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isrotate: 0
-  speed: 100
+  speed: 120
 --- !u!4 &577037062
 Transform:
   m_ObjectHideFlags: 0
@@ -4535,7 +4535,7 @@ GameObject:
   - component: {fileID: 1416017796}
   - component: {fileID: 1416017795}
   m_Layer: 0
-  m_Name: SmallCircle (3)
+  m_Name: SmallCircle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4554,7 +4554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isrotate: 0
-  speed: 100
+  speed: 150
 --- !u!4 &1416017796
 Transform:
   m_ObjectHideFlags: 0
@@ -7215,7 +7215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isrotate: 0
-  speed: 90
+  speed: 100
 --- !u!4 &2104677609
 Transform:
   m_ObjectHideFlags: 0
@@ -10262,7 +10262,7 @@ Camera:
   m_GameObject: {fileID: 5689701022444911636}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.1800519, g: 0.18559733, b: 0.287, a: 0.70980394}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
