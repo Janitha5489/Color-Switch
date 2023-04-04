@@ -7,6 +7,7 @@ public class LevelBTN : MonoBehaviour
     public void OpenScene() 
     {
         SceneManager.LoadScene(sceneIndex);
+        Time.timeScale = 1.0f;
     }
     public void DeleteAllDAta()
     {
