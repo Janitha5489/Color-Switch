@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,11 +10,15 @@ public class PausedMenu : MonoBehaviour
     public GameObject gameIsResum;
     public GameObject pauseBTN;
     public GameObject Ball;
+    public List<Rotator> Rotators = new List<Rotator>();
 public void PauseGame() {
         if (!GameIsPaused){
             GameIsPaused = true;
             OnResume.Invoke(false);
-            Time.timeScale = 0f;
+            foreach (var item in Rotators)
+            {
+                item.isrotate = false;
+            }
             Debug.Log("pausemenuOpen");
             pauseBTN.gameObject.SetActive(true);    
         }

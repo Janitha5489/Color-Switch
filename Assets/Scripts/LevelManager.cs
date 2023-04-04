@@ -6,6 +6,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private Button[] Buttons;
     private int m_UnlockedLevelsNumber;
+    public GameObject M_ResetConfirmPannel;
     private void Awake() {
         for (int i = 0; i < Buttons.Length; i++){
             Buttons[i].interactable = false;
@@ -19,7 +20,16 @@ public class LevelManager : MonoBehaviour
             Buttons[i].interactable = true;
         }
     }
-    
+    public void ResetConfirm()
+    {
+        Debug.Log("Reset confirm MSG");
+        M_ResetConfirmPannel.gameObject.SetActive(true);
+    }
+    public void ExitGame()
+    {
+        Debug.Log("ExitGame");
+        Application.Quit();
+    }
 }
 
 
