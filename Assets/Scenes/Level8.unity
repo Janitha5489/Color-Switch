@@ -16431,7 +16431,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1610755654539778621}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: LoadNextScene
+        m_MethodName: UnlockNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16443,7 +16443,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1610755654539778621}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: UnlockNextLevel
+        m_MethodName: LoadNextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -13,7 +13,5 @@ public class LevelBTN : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         Application.LoadLevel("LevelManager");
-
-
     }
 }

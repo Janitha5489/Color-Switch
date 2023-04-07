@@ -10,6 +10,6 @@ public class Exit : MonoBehaviour{
     public void ExitConfirm() {
         Debug.Log("Exit Confirm MSG");
         ExitConfirmPanel.gameObject.SetActive(true);
-    }
+    } 
     
 }

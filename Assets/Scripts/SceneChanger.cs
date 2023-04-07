@@ -4,6 +4,11 @@ public class SceneChanger : MonoBehaviour
 {
     public int LevelToUnlock;
     private int NumberOfUnlockedLevels;
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1.0f;
+    }
     public void UnlockNextLevel() {
         NumberOfUnlockedLevels = PlayerPrefs.GetInt("Levels_Unlocked");
         Debug.Log(NumberOfUnlockedLevels <= LevelToUnlock);
@@ -15,18 +20,10 @@ public class SceneChanger : MonoBehaviour
     }
     public void Scene1(){
         SceneManager.LoadScene("LevelManager");
-        
-        
     }
     public void Scene2() {
-        SceneManager.LoadScene("Home");
-        
+        SceneManager.LoadScene("Home");    
     }
-    public void LoadNextScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Time.timeScale = 1.0f;
-        
-    }
+    
 }
 
