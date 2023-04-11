@@ -1,15 +1,16 @@
 using UnityEngine;
-public class Exit : MonoBehaviour{
+public class Exit : MonoBehaviour
+{
     public GameObject ExitConfirmPanel;
 
-    public void ExitGame(){
-        Debug.Log("ExitGame");
+    public void ExitGame()
+    {
         Application.Quit();
     }
 
-    public void ExitConfirm() {
-        Debug.Log("Exit Confirm MSG");
+    public void ExitConfirm()
+    {
         ExitConfirmPanel.gameObject.SetActive(true);
-    } 
-    
+    }
+
 }

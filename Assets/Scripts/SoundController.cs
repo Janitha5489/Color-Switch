@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class SoundController : MonoBehaviour{
+public class SoundController : MonoBehaviour
+{
     private Sprite m_SoundOnButton;
     private bool isOn = true;
 
     public AudioSource audioSource;
     public Sprite SoundOffButton;
     public Button button;
-    private void Start() {
+    private void Start()
+    {
         m_SoundOnButton = button.image.sprite;
     }
     public void BUttonClicked()

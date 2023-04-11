@@ -1,9 +1,10 @@
 using UnityEngine;
-public class AudioSound : MonoBehaviour{
+public class AudioSound : MonoBehaviour
+{
     public static AudioClip JumpSound;
     public static AudioClip WinSound;
     public static AudioClip FailSound;
-    public static AudioClip  BgSound;
+    public static AudioClip BgSound;
 
     static AudioSource audiosrc;
     void Start()
@@ -14,8 +15,10 @@ public class AudioSound : MonoBehaviour{
         BgSound = Resources.Load<AudioClip>("bg");
         audiosrc = GetComponent<AudioSource>();
     }
-    public static void PlaySound (string clip){
-        switch (clip) { 
+    public static void PlaySound(string clip)
+    {
+        switch (clip)
+        {
             case "jump":
                 audiosrc.PlayOneShot(JumpSound);
                 break;

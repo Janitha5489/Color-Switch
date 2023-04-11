@@ -1167,10 +1167,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 297242368}
-  - component: {fileID: 297242372}
   - component: {fileID: 297242371}
   - component: {fileID: 297242370}
   - component: {fileID: 297242369}
+  - component: {fileID: 297242372}
   m_Layer: 5
   m_Name: level7
   m_TagString: Untagged
@@ -1243,14 +1243,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 297242372}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 8
+  sceneIndex: 0
 --- !u!1 &388003524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,10 +1315,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 388003525}
-  - component: {fileID: 388003529}
   - component: {fileID: 388003528}
   - component: {fileID: 388003527}
   - component: {fileID: 388003526}
+  - component: {fileID: 388003529}
   m_Layer: 5
   m_Name: level4
   m_TagString: Untagged
@@ -1391,14 +1391,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 388003529}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 5
+  sceneIndex: 0
 --- !u!1 &393119912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,10 +1463,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 393119913}
-  - component: {fileID: 393119917}
   - component: {fileID: 393119916}
   - component: {fileID: 393119915}
   - component: {fileID: 393119914}
+  - component: {fileID: 393119917}
   m_Layer: 5
   m_Name: level2
   m_TagString: Untagged
@@ -1539,14 +1539,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 393119917}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 3
+  sceneIndex: 0
 --- !u!1 &527757066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1613,7 @@ GameObject:
   - component: {fileID: 527757067}
   - component: {fileID: 527757069}
   - component: {fileID: 527757068}
+  - component: {fileID: 527757070}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -1700,6 +1701,19 @@ MonoBehaviour:
   m_Spacing: {x: 153.6, y: 153.8}
   m_Constraint: 0
   m_ConstraintCount: 3
+--- !u!114 &527757070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527757066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndex: 0
 --- !u!1 &560320086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,10 +2128,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 602744860}
-  - component: {fileID: 602744864}
   - component: {fileID: 602744863}
   - component: {fileID: 602744862}
   - component: {fileID: 602744861}
+  - component: {fileID: 602744864}
   m_Layer: 5
   m_Name: level9
   m_TagString: Untagged
@@ -2190,14 +2204,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 602744864}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2252,7 +2266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 10
+  sceneIndex: 0
 --- !u!1 &686165960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,10 +2411,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 807694249}
-  - component: {fileID: 807694253}
   - component: {fileID: 807694252}
   - component: {fileID: 807694251}
   - component: {fileID: 807694250}
+  - component: {fileID: 807694253}
   m_Layer: 5
   m_Name: level6
   m_TagString: Untagged
@@ -2473,14 +2487,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 807694253}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2535,7 +2549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 7
+  sceneIndex: 0
 --- !u!1 &810970431
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,10 +3196,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1082653007}
-  - component: {fileID: 1082653011}
   - component: {fileID: 1082653010}
   - component: {fileID: 1082653009}
   - component: {fileID: 1082653008}
+  - component: {fileID: 1082653011}
   m_Layer: 5
   m_Name: level5
   m_TagString: Untagged
@@ -3258,14 +3272,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1082653011}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3320,7 +3334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 6
+  sceneIndex: 0
 --- !u!1 &1102551861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,10 +3344,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1102551862}
-  - component: {fileID: 1102551866}
   - component: {fileID: 1102551865}
   - component: {fileID: 1102551864}
   - component: {fileID: 1102551863}
+  - component: {fileID: 1102551866}
   m_Layer: 5
   m_Name: lvl1 (10)
   m_TagString: Untagged
@@ -3406,14 +3420,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1102551866}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3468,7 +3482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 11
+  sceneIndex: 0
 --- !u!1 &1132062682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,10 +3492,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1132062683}
-  - component: {fileID: 1132062687}
   - component: {fileID: 1132062686}
   - component: {fileID: 1132062685}
   - component: {fileID: 1132062684}
+  - component: {fileID: 1132062687}
   m_Layer: 5
   m_Name: level8
   m_TagString: Untagged
@@ -3554,14 +3568,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1132062687}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3616,7 +3630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 9
+  sceneIndex: 0
 --- !u!1 &1132692315
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,10 +4181,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465179668}
-  - component: {fileID: 1465179672}
   - component: {fileID: 1465179671}
   - component: {fileID: 1465179670}
   - component: {fileID: 1465179669}
+  - component: {fileID: 1465179672}
   m_Layer: 5
   m_Name: level3
   m_TagString: Untagged
@@ -4243,14 +4257,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1465179672}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4305,7 +4319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 4
+  sceneIndex: 0
 --- !u!1 &1540409454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5170,7 +5184,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2117840511}
+      - m_Target: {fileID: 527757070}
         m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
         m_MethodName: DeleteAllDAta
         m_Mode: 1
@@ -6181,7 +6195,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2117840507}
-  - component: {fileID: 2117840511}
   - component: {fileID: 2117840510}
   - component: {fileID: 2117840509}
   - component: {fileID: 2117840508}
@@ -6257,14 +6270,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2117840511}
-        m_TargetAssemblyTypeName: LevelBTN, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 527757068}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6307,19 +6320,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117840506}
   m_CullTransparentMesh: 1
---- !u!114 &2117840511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117840506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202681d6806332045a9d0318b9945bbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneIndex: 2
 --- !u!1 &2132249463
 GameObject:
   m_ObjectHideFlags: 0

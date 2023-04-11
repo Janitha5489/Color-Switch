@@ -16,7 +16,7 @@ public class Safearea : MonoBehaviour
     void applysafearea()
     {
         if (panelsafearea == null)
-        return;
+            return;
         Rect safearea = Screen.safeArea;
         Vector2 anchorMin = safearea.position;
         Vector2 anchorMax = safearea.position - safearea.size;

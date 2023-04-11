@@ -7,83 +7,37 @@ public class LevelManager : MonoBehaviour
     private Button[] Buttons;
     private int m_UnlockedLevelsNumber;
     public GameObject M_ResetConfirmPannel;
-    private void Awake() {
-        for (int i = 0; i < Buttons.Length; i++){
+    private readonly string m_LevelId = "LevelId";
+
+    private void Awake()
+    {
+        for (int i = 0; i < Buttons.Length; i++)
+        {
             Buttons[i].interactable = false;
         }
     }
     private void Start()
     {
-        m_UnlockedLevelsNumber = PlayerPrefs.GetInt("Levels_Unlocked", 0);
-        for (int i = 0; i <= m_UnlockedLevelsNumber; i++)
+        m_UnlockedLevelsNumber = PlayerPrefs.GetInt("Levels_Unlocked", 1);
+        for (int i = 0; i < m_UnlockedLevelsNumber; i++)
         {
             Buttons[i].interactable = true;
         }
     }
     public void ResetConfirm()
     {
-        Debug.Log("Reset confirm MSG");
         M_ResetConfirmPannel.gameObject.SetActive(true);
     }
     public void ExitGame()
     {
-        Debug.Log("ExitGame");
         Application.Quit();
+    }
+
+
+    public void LoadLevel(int id)
+    {
+        PlayerPrefs.SetInt(m_LevelId, id);
+        SceneChanger.LoadGameScene();
     }
 }
 
-
-
-
-
-
-
-
-
-   /* private void Update()
-    {
-        unlockedLevelsNumber = PlayerPrefs.GetInt("LevelsUnlocked");
-        for (int i = 0; i < unlockedLevelsNumber; i++) 
-        {
-            buttons[i].interactable = true;
-        }
-    }*/
-
-
-
-    /*int levelUnlocked;
-
-    public Button[] LevelButtons;
-    private int i;
-
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        int ReachedLevel = PlayerPrefs.GetInt("ReachLevel", 1);
-        if (PlayerPrefs.GetInt("Level") >= 10)
-        {
-            ReachedLevel = PlayerPrefs.GetInt("Level");
-        }
-
-        LevelButtons = new Button[transform.childCount];
-        for (int i = 0; i < LevelButtons.Length; i++)
-        {
-            LevelButtons[i] = transform.GetChild(i).GetComponent<Button>();
-            LevelButtons[i].GetComponentInChildren<Text>().text = (i + 1).ToString();
-            if (i + 1 > ReachedLevel)
-            {
-                LevelButtons[i].interactable = false;
-            }
-        }
-    }
-    public void LoadScene(int Level)
-    {
-        PlayerPrefs.SetInt("Level", Level);
-        Application.LoadLevel("Loading");
-
-        
-    }
-    void update()
-    {
-
-    }*/
